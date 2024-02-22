@@ -1,8 +1,12 @@
+/**
+ * James Hamilton
+ * February 22nd, 2024
+ * ADEV 3007: Zacharie Montreuil
+ */
+
 package com.example.rickandmortyapp.network
 
 import kotlinx.serialization.Serializable
-import kotlinx.serialization.SerialName
-
 
 @Serializable
 data class OriginLocation(
@@ -18,8 +22,8 @@ data class RMCharacter(
     val species: String,
     val type: String,
     val gender: String,
-    val origin: OriginLocation, // Corrected from List<String> to OriginLocation
-    val location: OriginLocation, // Corrected from List<String> to OriginLocation
+    val origin: OriginLocation,
+    val location: OriginLocation,
     val image: String,
     val episode: List<String>,
     val url: String,
