@@ -19,7 +19,7 @@ private val retrofit = Retrofit.Builder()
     .build()
 
 interface RMApiService {
-    @GET("character")
+    @GET("character/1,2,3")
     suspend fun getCharacters(): List<RMCharacter>
 }
 
